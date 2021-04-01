@@ -19,7 +19,123 @@
             <div id="graph2"></div><br/>
         </div>
         <div class="col-lg-6">
+            <button type="button" class="btn btn-info" onclick="setData(2014)">2014</button>
+            <button type="button" class="btn btn-info" onclick="setData(2018)">2018</button>
             <div id="graph3"></div>
+            <p>Written Questions:</p>
+            <p>1. 
+                My first graph shows a bar chart of the number of games played 
+                in 10 year increments from 1975 through 2015. I chose these years 
+                because they do a very good job in showing the gradual increase in 
+                number of games played over time. I thought that 1975 was a good
+                starting point, as games prior to this year seemed outdated.
+            </p>
+            <p>My second graph shows a scatter plot of the top 10 countries in 
+                international football based on winning percentage. I chose to
+                show the number of games played on the y axis in order to draw 
+                attention to countries with a high winning percentage with many games 
+                played, a feat that shows that country's strength. Additionally, I set
+                a 100 game minimum in order to exclude countries that have played very 
+                few games that have a high winning percentage, as these wins do not 
+                necessarily signify strength and these countries do not deserve to be 
+                included in this graph based on a handful of wins. This graph features
+                a tooltip -- you can see the country that a dot represents as well as 
+                that country's winning percentage and games played by putting your 
+                mouse over it. 
+            </p>
+            <p>My third graph shows the strongest teams in each of the last two
+                World Cups. There are two buttons for the 2014 and 2018 World Cups, 
+                and each of these two graphs feature different countries and different
+                scores based on performance in this specific World Cup. The score I 
+                include as a metric of performance is calculated as follows: each country
+                earns an amount of points equal to their opposition's all time winning
+                percentage for beating that team, and an amount of points equal to one
+                half of theiropposition's all time winning percentage for tying that
+                team. I chose to calculate score in this way because a country's score 
+                will increase more when beating historically good teams than beating 
+                historically bad teams, and will increase by more winning a game than 
+                tying or losing a game. Losing a game grants that country 0 points. I 
+                chose not to make this score an average based on games played because 
+                the World Cup is played in a knockout format, which means that the teams
+                that win games will advance and thus play more games, which can only
+                increase their score. Thus, teams that advance will end up with a higher
+                score, all else equal, due to playing more games and winning those games
+                than the teams that lose and do not advance. 
+            </p>
+            <p>2. Three reasons why D3 was helpful:</p>
+            <p>a. D3 was very helpful in providing a standard format to build a graph, 
+                which I could manipulate to suit the specific needs of the graph I 
+                needed to best illustrate the question I aimed to answer.
+            </p>
+            <p>b. D3 made it very easy to include interactive elements to my graphs. 
+                D3 allows for the creation of graphs using variables that can change 
+                which data is selected for the graph, which allows for a seamless
+                transition for, in my case, the change of years. Without D3, creating
+                a visual that effectively compares the same graph for different occasions
+                would be very challenging. 
+            </p>
+            <p>c. D3 makes it very easy to adjust visual components to make graphs very
+                aesthetically pleasing. Using builtin D3 functions, it is very easy to update
+                components of graphs like color, positioning, and domain in order to create
+                a graph that best illustartes what you want to show. You can easily alter
+                your code and see the resulting graph, and make changes until you are
+                satisfied with the end product. 
+            </p>
+            <p>3. Three reasons why D3 was not the best tool:</p> 
+            <p>a. D3 limits the type of data sets that can be used as an input to making
+                a graph. I noticed that as I was cleaning my data to be used in a graph
+                for D3, I had to make an array of dictionaries or else it was almost
+                impossible to use. As such, I had to manipulate my data cleaning methods
+                to ensure that I returned something that was compatible with D3, which often
+                I would not have otherwise done. This was tedious at times. 
+            </p>
+            <p>b. When creating graphs that are on the simpler side, for instance my first
+                graph, I do not think that D3 was necessarily the most efficient mechanism. 
+                I felt that a more simple and time efficient program to create a quick chart
+                would have produced a similar result for the first graph. 
+            </p>
+            <p>c. Finally, D3 is outdated compared to other visualization programs. programs
+                like React are used more frequently as they were created more recently and thus
+                have more advanced technologies and are generally more efficient.
+            </p>
+            <p>4. 
+                I think that, in general, my dashboard is pretty accessible. I think I 
+                did a good job in choosing which types of graphs to illustrate the answers
+                to each question. I do think, however, that my graphs might be hard to
+                understand if the individual looking at them is not very knowledgable about
+                football. In particular, without reading the description I wrote in the first
+                written question, my third graph might be hard to interpret, as the score metric
+                I am using is essentially made up. However, visually speaking, it does do a 
+                good job in conveying which teams were strong in each World Cup.
+            </p>
+            <p>I chose to use a standard color scheme throughout my graphs in order to 
+                avoid any distraction, and I think that this allows for my data to be 
+                visualized easily for most people. However, with the reading in mind, I 
+                understand that it is impossible to make something visually accessible for
+                everyone. With this in mind, I did my best job to keep my axis labels clear 
+                but concise, my domains and ranges limited while conveying the necessary 
+                information, and my graphs large enough for most to interpret easily while
+                not being too large and distracting from other parts of my dashboard. 
+            </p>
+            <p>In order to make my dashboard more accessible to particularly those who are
+                not very knowledgable about football, I could have offered some explanations
+                for my second and third graphs. This way those looking at my dashboard would
+                have a better understanding of what message the graphs are conveying, and why 
+                I chose to illustrate the data the way I did. However, I believe that in my 
+                written questions I have definitely touched on this. 
+            </p>
+            <p>5. 
+                I could have made my dashboard more accessible by explaining, in particular,
+                the metrics used for graph 3 and also graph 2. The factor that I believe was 
+                most responsible for the lack of explanation, in particular for the metric 
+                used in graph 3, was that I did not want to distract the viewer from the visual. 
+                I think that the visual is very clear, although the metric used to create the 
+                visual is not. Additionally, I could have provided a map for those that are 
+                unaware of the location of certain countries listed in my graphs. I did not do 
+                this because I personally did not think that this was necessary, and I simply 
+                did not have the time to do this. However, if I had more time I think an interactive
+                map would have made my dashboard more accessible.  
+            </p>
         </div>
     </div>
     <!--Feel free to add more JavaScript files as needed-->
