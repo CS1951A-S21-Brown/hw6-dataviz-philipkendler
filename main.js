@@ -195,7 +195,7 @@ svg3.append("text")
     .text("Score");
 
 let y_axis_text3 = svg3.append("text")
-    .attr("transform", `translate(-120, ${(graph_3_height - margin.top - margin.bottom) / 2})`)
+    .attr("transform", `translate(-80, ${(graph_3_height - margin.top - margin.bottom) / 2})`)
     .style("text-anchor", "middle");
 
 let title3 = svg3.append("text")
